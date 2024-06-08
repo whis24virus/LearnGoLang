@@ -27,6 +27,7 @@ func main() {
 	multi, add, err := multiply(26, 25)
 	if err != nil {
 		fmt.Printf(err.Error())
+		fmt.Printf(err.Error())
 	}
 	fmt.Printf("the multiplication is %v and the addition is %v", multi, add)
 
@@ -34,6 +35,15 @@ func main() {
 
 	var1, var2 := 24, "3455"
 	fmt.Println(myVar, var1, var2)
+
+	// arrays in go learning
+
+	var intArr [3]int32
+	intArr[1] = 123
+	fmt.Println(intArr[0:3])
+	fmt.Println(intArr[1])
+	fmt.Println(intArr[2])
+	fmt.Println(intArr)
 }
 
 func printMe(printValue string) {
